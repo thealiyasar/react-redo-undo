@@ -55,6 +55,11 @@ function App() {
     setCurrPoint(prev => [...prev, last]);
   };
 
+  const goGithub = e => {
+    e.stopPropagation();
+    window.open("https://github.com/thealiyasar/react-redo-undo", "_blank");
+  };
+
   return (
     // Main screen, clicks are recorded here
     <div className="screen" onClick={clickHandle}>
@@ -65,6 +70,9 @@ function App() {
         </button>
         <button disabled={undoPoint.length === 0} onClick={redoHandle}>
           Redo
+        </button>
+        <button className="github" onClick={goGithub}>
+          Github
         </button>
       </header>
 

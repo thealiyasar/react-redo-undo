@@ -16,7 +16,7 @@ body,
   position: absolute;
   top: 0;
   left: 0;
-  width: fit-content;
+  width: 100%;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -46,4 +46,13 @@ body,
   height: 20px;
   background-color: yellowgreen;
   border-radius: 100%;
+}
+.github {
+  z-index: 99;
+  color: white;
+  background-color: cadetblue !important;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  display: block;
+  margin-left: auto;
 }
