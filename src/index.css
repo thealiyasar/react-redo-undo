@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+.screen {
+  height: 100vh;
+}
+
+.screen {
+  background: black;
+}
+.buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  button {
+    display: block;
+    padding: 10px 15px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}
+.point {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: yellowgreen;
+  border-radius: 100%;
+}
